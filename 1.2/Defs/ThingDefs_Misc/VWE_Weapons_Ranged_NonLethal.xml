@@ -102,6 +102,11 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
  </ThingDef>
  
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -167,6 +172,11 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>VWE_Bullet_RubberPistol</defName>
@@ -387,6 +397,11 @@
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
   </ThingDef>
 
  

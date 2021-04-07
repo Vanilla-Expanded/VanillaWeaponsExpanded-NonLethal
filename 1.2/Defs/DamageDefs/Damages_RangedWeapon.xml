@@ -8,9 +8,10 @@
     <workerClass>DamageWorker_AddInjury</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been shot to death by an anesthetic dart.</deathMessage>
-    <hediff>Anesthetic</hediff>
-    <hediffSolid>Anesthetic</hediffSolid>
+    <hediff>Gunshot</hediff>
+    <hediffSolid>Gunshot</hediffSolid>
     <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+	<additionalHediffs><li>Anesthetic</li></additionalHediffs>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
