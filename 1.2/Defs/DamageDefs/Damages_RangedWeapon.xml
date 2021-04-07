@@ -11,7 +11,11 @@
     <hediff>Gunshot</hediff>
     <hediffSolid>Gunshot</hediffSolid>
     <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
-	<additionalHediffs><li>Anesthetic</li></additionalHediffs>
+    <additionalHediffs>
+      <li>
+        <hediff>Anesthetic</hediff>
+      </li>
+    </additionalHediffs>
     <impactSoundType>Bullet</impactSoundType>
     <armorCategory>Sharp</armorCategory>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
