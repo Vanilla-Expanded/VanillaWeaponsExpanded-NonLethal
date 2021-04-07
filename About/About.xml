@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Vanilla Weapons Expanded - Non-Lethal</name>
+  <author>Oskar Potocki</author>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+  <packageId>VanillaExpanded.VWENL</packageId>
+  <description>Vanilla Weapons Expanded - Makeshift is a small module that fits perfectly with all the nutters playing Naked Brutality survival scenario, or roleplaying in a post-apocalyptic universe. Inspired directly by games like Rust and Fallout, as well as the improvised firearms of the Chechen rebels, these guns can be crafted without any machining tables or steel. All you need is to complete the Makeshift weapons research project, bring your components to a crafting spot and start mass producing these cheap, unreliable weapons.
+  
+That’s right. Unreliable? What does it mean? It means that each weapon has a random amount of shots it can fire within a burst (with a minimum and maximum amount). A makeshift pistol can fire between 0 (!) and 1 shots, whilst a makeshift rifle can fire anywhere between 0 and 5 shots.
+
+You never know how many shots your burst will fire, or if it will fire at all, thus making these weapons non-ideal. Essentially, by crafting these, you allow Randy Random to mess with you one more time during every combat encounter. But hey, they are cheap, and they are makeshift!
+</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>brrainz.harmony</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+  </loadAfter>
+</ModMetaData>
