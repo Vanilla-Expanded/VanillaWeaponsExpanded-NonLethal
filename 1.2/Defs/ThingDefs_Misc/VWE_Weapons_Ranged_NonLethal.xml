@@ -40,7 +40,7 @@
 		<texPath>Things/Item/Equipment/WeaponRanged/TaserGun</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>VWE_Interact_LaserGun</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <statBases>
 		<WorkToMake>4600</WorkToMake>
 		<MarketValue>800</MarketValue>
@@ -254,7 +254,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>VWE_AnestheticDart</damageDef>
       <damageAmountBase>3</damageAmountBase>
       <stoppingPower>5</stoppingPower>
       <speed>75</speed>
