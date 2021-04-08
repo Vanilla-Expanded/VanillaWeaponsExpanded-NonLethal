@@ -13,7 +13,8 @@
     <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
     <additionalHediffs>
       <li>
-        <hediff>Anesthetic</hediff>
+        <hediff>VWE_Anesthetic</hediff>
+		<severityPerDamageDealt>1</severityPerDamageDealt>
       </li>
     </additionalHediffs>
     <impactSoundType>Bullet</impactSoundType>
