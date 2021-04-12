@@ -6,11 +6,11 @@
     <li>1.2</li>
   </supportedVersions>
   <packageId>VanillaExpanded.VWENL</packageId>
-  <description>Vanilla Weapons Expanded - Makeshift is a small module that fits perfectly with all the nutters playing Naked Brutality survival scenario, or roleplaying in a post-apocalyptic universe. Inspired directly by games like Rust and Fallout, as well as the improvised firearms of the Chechen rebels, these guns can be crafted without any machining tables or steel. All you need is to complete the Makeshift weapons research project, bring your components to a crafting spot and start mass producing these cheap, unreliable weapons.
-  
-That’s right. Unreliable? What does it mean? It means that each weapon has a random amount of shots it can fire within a burst (with a minimum and maximum amount). A makeshift pistol can fire between 0 (!) and 1 shots, whilst a makeshift rifle can fire anywhere between 0 and 5 shots.
+  <description>Vanilla Weapons Expanded - Non-Lethal has been a commonly requested weapon set. So many times prison breaks result in accidental deaths. So many times, an enemy raider is your colonist’s father and you accidentally put a sniper rifle round through his skull. So many times your berserk pawn starts to fight with your melee expert with archotech arms, resulting in, well, death.
 
-You never know how many shots your burst will fire, or if it will fire at all, thus making these weapons non-ideal. Essentially, by crafting these, you allow Randy Random to mess with you one more time during every combat encounter. But hey, they are cheap, and they are makeshift!
+Thanks to this mod, you will now have numerous ways of dispatching crowds and taking down single targets - you can use tear gas to blind groups of opponents, tasers to stun single targets, and dart guns to bring down even the hardest foes in a matter of seconds.
+
+Vanilla Weapons Expanded is part of a series of mods expanding on everyday life on the Rimworld. When paired together with a brand new Vanilla Apparel Expanded and Vanilla Armours Expanded, you can bring something to your game that will keep you interested in it for days. 
 </description>
   <modDependencies>
     <li>
