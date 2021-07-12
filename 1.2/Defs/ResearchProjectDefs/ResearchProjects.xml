@@ -11,6 +11,9 @@
     <techLevel>Industrial</techLevel>
   <researchViewX>7.00</researchViewX>
   <researchViewY>1.95</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
 		<tab>VanillaExpanded</tab>
   </ResearchProjectDef>
 

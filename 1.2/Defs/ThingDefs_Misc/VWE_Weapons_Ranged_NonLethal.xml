@@ -393,6 +393,9 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
+<recipeUsers>
+<li>TableMachining</li>
+</recipeUsers>
     </recipeMaker>
     <thingCategories>
       <li>WeaponsMelee</li>
