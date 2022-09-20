@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+ <!-- ====================== Tesla Gun  ===================== -->
+  <ThingDef ParentName="VWENL_Bullet_TaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <defName>VWE_Bullet_Taser</defName>
+    <label>taser shot</label>
+    <description>A high-voltage taser shot.</description>
+    <graphicData>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <texPath>Things/Projectile/Shot_TaserGun</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <textures>
+      <li>Things/Projectile/Shot_TaserGun</li>
+    </textures>
+    <seam>0</seam>
+	<flickerFrameTime>5</flickerFrameTime>
+    <causefireChance>0</causefireChance>
+	
+	<beamWidth>4</beamWidth>
+	<lifetime>120</lifetime>
+
+    <projectile>
+		<damageDef>Stun</damageDef>
+		<damageAmountBase>46</damageAmountBase>
+		<armorPenetrationBase>0.45</armorPenetrationBase>
+		<stoppingPower>3</stoppingPower>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWE_Gun_Taser</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>taser gun</label>
+    <description>An industrial tech short range taser pistol. It delivers an electric shock aimed at temporarily disrupting muscle functions and inflicting pain without usually causing significant injury.</description>
+    <graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/TaserGun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+		<WorkToMake>4600</WorkToMake>
+		<MarketValue>800</MarketValue>
+		<Mass>1.2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.89</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>6.6</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Steel>45</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisite Inherit="False">VWE_NonLethal</researchPrerequisite>
+    </recipeMaker>
+	<techLevel>Industrial</techLevel>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+		<generateCommonality>0.1</generateCommonality>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWE_Bullet_Taser</defaultProjectile>
+			<warmupTime>1.2</warmupTime>
+			<range>6.9</range>
+			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWE_TaserShot_Electricity</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+ </ThingDef>
+ 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWE_Gun_RubberBulletPistol</defName>
+    <label>non-lethal pistol</label>
+    <description>A modern design of a gas-operated pistol firing rubber pellets. While chances of serious injury are lower, there is still a chance blunt trauma will result in death.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/RubberBulletGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>4400</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VWE_Bullet_RubberPistol</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>VWENL_Shot_RubberBulletPistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_RubberPistol</defName>
+    <label>rubber bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VWE_Gun_DartGun</defName>
+    <label>dart gun</label>
+    <description>A non-lethal air gun used to reduce irritability or agitation in animals or humans via anesthetic drugs commonly referred to as tranquilizers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/DartGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>36000</WorkToMake>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.82</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>4.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <Neutroamine>20</Neutroamine>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VWE_Bullet_DartGun</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>36.9</range>
+        <soundCast>VWENL_Shot_DartGun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_DartGun</defName>
+    <label>tranquilizer dart</label>
+    <graphicData>
+      <texPath>Things/Projectile/DartSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>VWE_AnestheticDart</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <stoppingPower>5</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<defName>VWE_Gun_TearGasLauncher</defName>
+	<label>tear gas launcher</label>
+    <description>A modern single-shell launcher loaded with tear gas canisters. Often used by riot police across almost all urbworlds.</description>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/TearGasLauncher</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.3</generateCommonality>
+	<statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>3</Mass>
+		<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>65</Steel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		<Neutroamine>50</Neutroamine>
+	</costList>
+    <recipeMaker>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWENL_Projectile_TearGasGrenade</defaultProjectile>
+			<warmupTime>3.5</warmupTime>
+			<range>19.9</range>
+			<forcedMissRadius>2.9</forcedMissRadius>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWENL_Shot_GrenadeLauncher</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+	</verbs>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>VWE_MeleeWeapon_StunBaton</defName>
+    <label>stun baton</label>
+    <description>A short peacekeeping baton with electroshock prod that delivers an electric shock aimed at temporarily disrupting muscle functions.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/StunBaton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+	<costList>
+		<Steel>40</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>
+    <statBases>
+      <WorkToMake>6600</WorkToMake>
+      <Mass>0.85</Mass>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>32</amount>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+<recipeUsers>
+<li>TableMachining</li>
+</recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+  </ThingDef>
+
+ 
+
+  
+</Defs>

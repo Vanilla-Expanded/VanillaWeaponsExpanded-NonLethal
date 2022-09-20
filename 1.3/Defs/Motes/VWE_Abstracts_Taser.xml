@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <defName>VWENLBeamGraphic</defName>
+    <thingClass>VanillaWeaponsExpandedLaser.LaserBeamGraphic</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <label>taser beam</label>
+    
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="VWENL_Bullet_TaserGeneric" ParentName="BaseBullet">
+    <thingClass>VanillaWeaponsExpandedLaser.LaserBeam</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <beamGraphic>VWENLBeamGraphic</beamGraphic>
+   
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+	
+    <explosionEffect>VWENLTaserImpact</explosionEffect>
+    <hitLivingEffect>VWENLTaserLivingImpact</hitLivingEffect>
+    
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>10000</speed>
+    </projectile>
+    
+    <seam>0.25</seam>
+  </ThingDef>
+</Defs>

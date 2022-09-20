@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <SoundDef>
+    <defName>VWE_TaserShot_Electricity</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/TaserShot_Electricity</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.83</min>        
+          <max>1.15</max>
+        </pitchRange>
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>    
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>VWENL_Shot_GrenadeLauncher</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/IncendiaryLauncher</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40.58823</min>        
+          <max>40.58823</max>
+        </volumeRange>
+		<pitchRange>
+          <min>0.6976015</min>        
+          <max>0.7769372</max>
+        </pitchRange>	
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>VWENL_Shot_RubberBulletPistol</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Shot_RubberBulletGun</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40.58823</min>        
+          <max>40.58823</max>
+        </volumeRange>
+		<pitchRange>
+          <min>0.6976015</min>        
+          <max>0.7769372</max>
+        </pitchRange>	
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <SoundDef>
+    <defName>VWENL_Shot_DartGun</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Shot_DartGun</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40.58823</min>        
+          <max>40.58823</max>
+        </volumeRange>
+		<pitchRange>
+          <min>0.6976015</min>        
+          <max>0.7769372</max>
+        </pitchRange>	
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

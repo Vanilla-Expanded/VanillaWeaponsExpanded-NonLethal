@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== VWE_MakeshiftWeapons ============-->
+
+  <ResearchProjectDef>
+    <defName>VWE_NonLethal</defName>
+    <label>non-lethal weapons</label>
+    <description>Craft a selection of non-lethal weapons, including tear gas launchers and tasers.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.95</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+		<tab>VanillaExpanded</tab>
+  </ResearchProjectDef>
+
+</Defs>
