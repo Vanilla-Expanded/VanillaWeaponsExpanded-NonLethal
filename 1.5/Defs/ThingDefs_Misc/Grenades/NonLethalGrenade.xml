@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== TEAR GAS GRENADE ========================== -->
+  <ThingDef ParentName="BaseMakeableGrenade">
+		<defName>VWE_TearGasGrenade</defName>
+		<label>tear gas grenades</label>
+		<description>Modern canister containing a special compound commonly referred to as tear gas. Temporarily blinds victims.</description>
+    <tickerType>Normal</tickerType>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/TearGasGrenades</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>ThrowGrenade</soundInteract>
+	<techLevel>Industrial</techLevel>
+	<statBases>
+		<Mass>1</Mass>
+		<RangedWeapon_Cooldown>5.66</RangedWeapon_Cooldown>
+		<WorkToMake>4600</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>VWE_NonLethal</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+		<Neutroamine>40</Neutroamine>
+		<Steel>10</Steel>
+    </costList>
+    <weaponTags Inherit="False">
+		<li>NonLethal</li>
+    </weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw smoke grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>15.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>2.8</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>VWENL_Projectile_TearGasGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>VWENL_Projectile_TearGasGrenade</defName>
+    <label>tear gas grenade</label>
+    <graphicData>
+      	<texPath>Things/Projectile/TearGasThrown</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      	<damageDef>VWENL_TearGas</damageDef> <!-- ARL_ToxicGas -->
+      	<speed>10</speed>
+      	<explosionRadius>3.9</explosionRadius>
+      	<flyOverhead>false</flyOverhead>
+      	<soundExplode>DispensePaste</soundExplode>
+      	<postExplosionSpawnThingDef>VWENL_TearGasCloud</postExplosionSpawnThingDef> <!-- ARL_ToxicGasCloud -->
+      	<postExplosionSpawnChance>1</postExplosionSpawnChance>
+      	<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <arcHeightFactor>2</arcHeightFactor>
+        <shadowSize>0.5</shadowSize>
+      	<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+ 
+</Defs>

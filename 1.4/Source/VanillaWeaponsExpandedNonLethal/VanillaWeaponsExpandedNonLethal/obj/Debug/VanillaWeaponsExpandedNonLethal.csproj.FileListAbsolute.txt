@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaWeaponsExpanded-NonLethal\1.4\Assemblies\VanillaWeaponsExpandedNonLethal.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaWeaponsExpanded-NonLethal\1.4\Source\VanillaWeaponsExpandedNonLethal\VanillaWeaponsExpandedNonLethal\obj\Debug\VanillaWeaponsExpandedNonLethal.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaWeaponsExpanded-NonLethal\1.4\Source\VanillaWeaponsExpandedNonLethal\VanillaWeaponsExpandedNonLethal\obj\Debug\VanillaWeaponsExpandedNonLethal.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaWeaponsExpanded-NonLethal\1.4\Source\VanillaWeaponsExpandedNonLethal\VanillaWeaponsExpandedNonLethal\obj\Debug\VanillaWeaponsExpandedNonLethal.dll
