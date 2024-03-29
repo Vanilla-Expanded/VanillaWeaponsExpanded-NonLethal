@@ -15,6 +15,13 @@
       <li>Gunsmithing</li>
     </prerequisites>
 		<tab>VanillaExpanded</tab>
+		  <rulesStrings>
+    <li>subject->the art of restraint</li>
+    <li>subject_story->pioneered the development of weapons designed to incapacitate rather than kill, emphasizing the value of life and ethical engagement</li>
+    <li>subject_story->crafted tools like tear gas launchers and tasers, providing options for control and defense without fatal outcomes</li>
+    <li>subject_gerund->advancing conflict resolution with humanity and compassion through non-lethal means</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
 
 </Defs>
