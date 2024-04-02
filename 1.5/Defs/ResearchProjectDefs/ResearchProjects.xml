@@ -15,6 +15,7 @@
       <li>Gunsmithing</li>
     </prerequisites>
 		<tab>VanillaExpanded</tab>
+		<generalRules>
 		  <rulesStrings>
     <li>subject->the art of restraint</li>
     <li>subject_story->pioneered the development of weapons designed to incapacitate rather than kill, emphasizing the value of life and ethical engagement</li>
