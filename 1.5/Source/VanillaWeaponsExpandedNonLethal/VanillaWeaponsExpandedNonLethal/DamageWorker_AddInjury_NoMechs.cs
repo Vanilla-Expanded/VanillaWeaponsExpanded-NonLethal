@@ -20,7 +20,18 @@ namespace VanillaWeaponsExpandedNonLethal
                 DamageResult damageResult = new DamageResult();
                 return damageResult;
             }
-            else return base.Apply(dinfo, thing);
+            if (pawn.health.hediffSet.HasHediff(InternalDefOf.VWE_Anesthetic))
+            {
+                if (pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VWE_Anesthetic).Severity > 0.6f)
+                {
+                    DamageResult damageResult = new DamageResult();
+                    return damageResult;
+                }
+
+            }
+
+
+            return base.Apply(dinfo, thing);
 
 
         }

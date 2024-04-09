@@ -295,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DamageWorker_AddInjury_NoMechs.cs" />
+    <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
