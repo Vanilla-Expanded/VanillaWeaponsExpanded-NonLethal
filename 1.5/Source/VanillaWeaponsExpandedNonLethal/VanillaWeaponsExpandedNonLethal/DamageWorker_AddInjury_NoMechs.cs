@@ -20,7 +20,7 @@ namespace VanillaWeaponsExpandedNonLethal
                 DamageResult damageResult = new DamageResult();
                 return damageResult;
             }
-            if (pawn.health.hediffSet.HasHediff(InternalDefOf.VWE_Anesthetic))
+            if (pawn?.health?.hediffSet?.HasHediff(InternalDefOf.VWE_Anesthetic)==true)
             {
                 if (pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.VWE_Anesthetic).Severity > 0.6f)
                 {
