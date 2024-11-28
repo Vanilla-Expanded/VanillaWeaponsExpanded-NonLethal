@@ -20,8 +20,8 @@
 		<beamWidth>4</beamWidth>
 		<lifetime>120</lifetime>
 		<projectile>
-			<damageDef>Stun</damageDef>
-			<damageAmountBase>46</damageAmountBase>
+			<damageDef>VWE_ConditionalStun</damageDef>
+			<damageAmountBase>1</damageAmountBase>
 			<armorPenetrationBase>0.45</armorPenetrationBase>
 			<stoppingPower>3</stoppingPower>
 		</projectile>
@@ -373,8 +373,8 @@
 				<cooldownTime>1.5</cooldownTime>
 				<extraMeleeDamages>
 					<li>
-						<def>Stun</def>
-						<amount>32</amount>
+						<def>VWE_ConditionalStun</def>
+						<amount>1</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>

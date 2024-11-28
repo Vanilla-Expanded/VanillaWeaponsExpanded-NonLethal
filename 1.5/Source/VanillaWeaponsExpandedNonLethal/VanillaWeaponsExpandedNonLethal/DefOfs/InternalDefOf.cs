@@ -14,7 +14,7 @@ namespace VanillaWeaponsExpandedNonLethal
         }
 
         public static HediffDef VWE_Anesthetic;
-       
+        public static HediffDef VWE_TearGas;
 
 
     }

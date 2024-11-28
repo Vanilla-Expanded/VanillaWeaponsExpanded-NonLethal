@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VanillaWeaponsExpandedNonLethal.UnaffectedByNonLethalDef>
+		<defName>VWE_UnaffectedThingDefs</defName>
+		<unaffectedDefs>
+			<li>AA_Behemoth</li>
+			<li>AA_Gallatross</li>
+			<li>AA_GallatrossMoribund</li>
+			<li>AA_SummitCrab</li>
+			<li>AA_FungalHusk</li>			
+			<li>GR_ArchotechCentipede</li>
+		</unaffectedDefs>
+	</VanillaWeaponsExpandedNonLethal.UnaffectedByNonLethalDef>
+</Defs>

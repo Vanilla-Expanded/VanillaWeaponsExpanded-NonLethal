@@ -294,9 +294,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DamageWorker_AddInjury_NoMechs.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_AddInjury_NoMechs.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_ConditionalStun.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_TearGas.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\UnaffectedByNonLethalDef.cs" />
+    <Compile Include="Gas\Gas_TearGas.cs" />
+    <Compile Include="Options\Mod.cs" />
+    <Compile Include="Options\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticCollections\StaticCollections.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
