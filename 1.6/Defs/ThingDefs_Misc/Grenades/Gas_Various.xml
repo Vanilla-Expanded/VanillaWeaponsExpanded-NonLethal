@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="VWENL_BaseGas">
+		<defName>VWENL_TearGasCloud</defName>
+		<label>tear gas</label>
+		<graphicData>
+			<texPath>Things/Gas/ThickSmoke</texPath>
+			<drawSize>2.6</drawSize>
+			<color>(0.96,0.89,0.21,1)</color>
+		</graphicData>
+		<gas>
+			<expireSeconds>
+				<min>20</min>
+				<max>30</max>
+			</expireSeconds>
+			<rotationSpeed>20</rotationSpeed>
+		</gas>
+		<thingClass>VanillaWeaponsExpandedNonLethal.Gas_TearGas</thingClass>
+	</ThingDef>
+</Defs>

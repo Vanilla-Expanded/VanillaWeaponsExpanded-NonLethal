@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== VWE_MakeshiftWeapons ============-->
+
+  <ResearchProjectDef>
+    <defName>VWE_NonLethal</defName>
+    <label>non-lethal weapons</label>
+    <description>Craft a selection of non-lethal weapons, including tear gas launchers and tasers.</description>
+    <baseCost>1400</baseCost>
+    <techLevel>Industrial</techLevel>
+  <researchViewX>7.00</researchViewX>
+  <researchViewY>1.95</researchViewY>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+		<tab>VanillaExpanded</tab>
+		<generalRules>
+		  <rulesStrings>
+    <li>subject->the art of restraint</li>
+    <li>subject_story->pioneered the development of weapons designed to incapacitate rather than kill, emphasizing the value of life and ethical engagement</li>
+    <li>subject_story->crafted tools like tear gas launchers and tasers, providing options for control and defense without fatal outcomes</li>
+    <li>subject_gerund->advancing conflict resolution with humanity and compassion through non-lethal means</li>
+  </rulesStrings>
+</generalRules>
+  </ResearchProjectDef>
+
+</Defs>

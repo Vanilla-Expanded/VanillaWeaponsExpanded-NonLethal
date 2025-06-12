@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>VWE_AnestheticDart</defName>
+		<label>anasthetic dart</label>
+		<workerClass>VanillaWeaponsExpandedNonLethal.DamageWorker_AddInjury_NoMechs</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death by an anesthetic dart.</deathMessage>
+		<hediff>Gunshot</hediff>
+		<hediffSolid>Gunshot</hediffSolid>
+		<harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+		<additionalHediffs>
+			<li>
+				<hediff>VWE_Anesthetic</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+	<DamageDef>
+		<defName>VWE_ConditionalStun</defName>
+		<label>stun</label>
+		<workerClass>VanillaWeaponsExpandedNonLethal.DamageWorker_ConditionalStun</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stunned to death.</deathMessage>
+		<defaultDamage>40</defaultDamage>
+		<harmsHealth>false</harmsHealth>
+		<hediff>Gunshot</hediff>
+		<hediffSolid>Gunshot</hediffSolid>
+		<makesBlood>false</makesBlood>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<combatLogRules>Damage_Stun</combatLogRules>
+	</DamageDef>
+	
+	<DamageDef>
+		<defName>VWENL_TearGas</defName>
+		<label>tear gas</label>
+		<workerClass>VanillaWeaponsExpandedNonLethal.DamageWorker_TearGas</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(134,144,22,0.05)</explosionColorEdge>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<harmsHealth>false</harmsHealth>
+		<combatLogRules>Damage_Extinguish</combatLogRules>
+	</DamageDef>
+</Defs>
