@@ -6,8 +6,8 @@
 		<workerClass>VanillaWeaponsExpandedNonLethal.DamageWorker_AddInjury_NoMechs</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been shot to death by an anesthetic dart.</deathMessage>
-		<hediff>Gunshot</hediff>
-		<hediffSolid>Gunshot</hediffSolid>
+		<hediff>VWE_Dart</hediff>
+		<hediffSolid>VWE_Dart</hediffSolid>
 		<harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
 		<additionalHediffs>
 			<li>
@@ -29,8 +29,8 @@
 		<deathMessage>{0} has been stunned to death.</deathMessage>
 		<defaultDamage>40</defaultDamage>
 		<harmsHealth>false</harmsHealth>
-		<hediff>Gunshot</hediff>
-		<hediffSolid>Gunshot</hediffSolid>
+		<hediff>VWE_Dart</hediff>
+		<hediffSolid>VWE_Dart</hediffSolid>
 		<makesBlood>false</makesBlood>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<soundExplosion>Explosion_Stun</soundExplosion>
